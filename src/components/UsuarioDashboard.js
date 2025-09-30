@@ -206,7 +206,7 @@ export default function UsuarioDashboard() {
                   <div style={styles.rifaInfo}>
                     <h3 style={styles.rifaTitulo}>{rifa.titulo}</h3>
                     <p style={styles.rifaText}>Precio: ${rifa.precioNumero}</p>
-                    <p style={styles.rifaText}>Ganancia: ${rifa.gananciaEsperada || 0}</p>
+                    <p style={styles.rifaText}>Premio Rifa: ${rifa.gananciaEsperada || 0}</p>
                     <p style={styles.rifaText}>Disponibles: {disponibles} / 100</p>
                     {rifa.fin && <p style={styles.rifaText}>Fin de la rifa: {rifa.fin.toDate().toLocaleString()}</p>}
                     {rifaTerminada && <p style={styles.finRifa}>Rifa finalizada</p>}
